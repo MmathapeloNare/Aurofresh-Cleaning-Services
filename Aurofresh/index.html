@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurofresh Cleaning Services</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header fade-in">
+        <div class="logo">
+    <img src="images/Cleaning Service Logo.jfif" alt="Logo">
+    <div>
+        Aurofresh <br>
+        <span>CLEANING SERVICES</span>
+    </div>
+</div>
+        <nav>
+            <a href="#">About us</a>
+            <a href="#">Services</a>
+            <a href="#">FAQ</a>
+            <a href="#" class="book-btn">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+    <img src="images/header.jpeg" alt="Cleaning Banner">
+
+    <div class="hero-content">
+        <h1 class="hero-title">Aurofresh Cleaning Company</h1>
+        <p class="hero-subtitle">Locally Owned, Dependable, Licensed and Risk-free</p>
+        <button class="primary-btn hero-btn">Learn more</button>
+    </div>
+</section>
+
+
+    <!-- INTRO SECTION -->
+    <section class="intro">
+        <h2>A Gold Standard of Clean for Winter Park Homes</h2>
+        <p>
+            Eco-friendly, non-toxic, and non-acidic cleaning services tailored for Orlando’s finest residences and workspaces.
+        </p>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Residential</h3>
+                <p>
+                    Residential Cleaning Commercial Cleaning Specialized Care Deep Cleans: A top-to-bottom refresh for your home.Office Sanitization: Keep your team healthy and productive.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Renovation</h3>
+                <p>
+                    Renovation: Removing dust without damaging new finishes.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Recurring Maintenance</h3>
+                <p>
+                    Weekly or bi-weekly boutique care.Retail & Showrooms: Creating a pristine environment for your guests.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Move-in/Move-out</h3>
+                <p>
+                    Starting your next chapter with a fresh slate.
+                </p>
+            </div>
+        </div>
+
+        <button class="primary-btn">View Our Full Services</button>
+    </section>
+
+<!-- HOW IT WORKS -->
+    <section class="how-it-works slide-left">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Stone safe</h3>
+                <p>Perfect for marble, quartz, and granite. No etching, no dulling.</p>
+            </div>
+
+            <div class="step">
+                <h3>2. Safe</h3>
+                <p>Pet & Kid Friendly: No harsh fumes or residues left behind on floors.</p>
+            </div>
+
+            <div class="step">
+                <h3>3. Surface Longevity</h3>
+                <p>We clean without stripping finishes or corroding hardware..</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+     <section class="testimonial fade-in">
+    <h2>Call to Action – Get My Free Quote</h2>
+
+    <p class="quote">
+        "Winter Park’s premier eco-friendly cleaning service. We use 100% non-toxic,
+        non-acidic, and plant-based products to protect your surfaces and your health."
+    </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer fade-in">
+        <div class="footer-grid">
+            <div>
+                <h4>We Provide</h4>
+                <p>Residential and commercial cleaning services tailored to you.</p>
+            </div>
+
+            <div>
+                <h4>Based locally</h4>
+                <p>Providing risk free services with pride.</p>
+            </div>
+
+            <div>
+                <h4>Contact Us</h4>
+                <p>+44 7877 670222<br></p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Aurofresh Cleaning Services</p>
+    </footer>
+<script>
+    const observers = document.querySelectorAll('.fade-in, .slide-left, .slide-right');
+
+    const observerOptions = {
+        threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    observers.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
